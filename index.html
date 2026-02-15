@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Class</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="course-header">
+            <h1 class="course-title">Complete Machine Learning Bangla Course</h1>
+            <p class="course-subtitle">(মেশিন লার্নিং) | Artificial Intelligence | Data Science Tutorials</p>
+            <p class="course-author">By <span>STUDY MART</span></p>
+        </div>
+
+        <div class="top-bar">
+            <div>
+                <button onclick="prevVideo()">⬅ Prev</button>
+                <button onclick="nextVideo()">Next ➡</button>
+            </div>
+            <div class="course-progress-box">
+                <span id="progressText">Course Progress: 0%</span>
+                <div class="course-progress-bar">
+                    <div class="course-progress-fill" id="courseProgressFill"></div>
+                </div>
+            </div>
+            <div>
+                <input type="text" id="search" placeholder="Search..." onkeyup="searchVideo()">
+                <button class="secondary-btn" onclick="toggleMode()">🌙/☀️</button>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="player-section">
+                <div id="player"></div>
+                <div class="progress-container">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+            </div>
+
+            <div class="playlist-section">
+                <div id="playlist"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3><a href="https://www.youtube.com/@StudyMart" target="_blank" rel="noopener noreferrer">Study
+                        Mart</a></h3>
+                <p>Complete Machine Learning Bangla Tutorials, AI, and Data Science guides for everyone.</p>
+
+                <hr class="hr-line">
+
+                <p class="disclaimer">
+                    <strong>Disclaimer:</strong> This playlist is curated and embedded solely for educational purposes.
+                    All rights and ownership belong to the original content creator. No copyright infringement is
+                    intended.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#playlist">Playlist</a></li>
+                    <li><a href="#player">Player</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#top">Top</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@studymart.com</p>
+                <p>Phone: +880 1234 567890</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="Twitter">🐦</a>
+                    <a href="#" target="_blank" title="Facebook">📘</a>
+                    <a href="#" target="_blank" title="Instagram">📸</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Study Mart. All rights reserved.
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
