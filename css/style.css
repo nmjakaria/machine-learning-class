@@ -378,11 +378,13 @@ input:focus {
         flex-direction: column;
         gap: 20px;
     }
+
     .player-section {
         position: static;
         top: auto;
         width: 100%;
     }
+
     #player iframe {
         height: 260px;
     }
@@ -395,15 +397,43 @@ input:focus {
     .top-bar {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
     }
 
     .top-bar div {
         display: flex;
         gap: 8px;
-        justify-content: center;
+        /* justify-content: center;
+        flex-wrap: wrap; */
     }
 
-        .footer-container {
+    .top-bar>div:not(:first-child) {
+        order: 1;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* কোর্স প্রগ্রেস */
+    .course-progress-box {
+        order: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .course-progress-box span {
+        font-size: 13px;
+    }
+
+    .course-progress-bar {
+        width: 100%;
+        height: 10px;
+    }
+
+    .footer-container {
         flex-direction: column;
         gap: 30px;
     }
@@ -412,5 +442,45 @@ input:focus {
     .footer-links,
     .footer-contact {
         min-width: 100%;
+    }
+
+    .course-progress-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .course-progress-box span {
+        font-size: 13px;
+    }
+
+    .course-progress-bar {
+        width: 100%;
+        max-width: 100%;
+        height: 10px;
+    }
+}
+
+@media(max-width:600px) {
+    .top-bar {
+        gap: 8px;
+    }
+
+    .course-progress-box {
+        gap: 4px;
+    }
+
+    .course-progress-box span {
+        font-size: 12px;
+    }
+
+    .course-progress-bar {
+        height: 8px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        max-width: 100%;
     }
 }
