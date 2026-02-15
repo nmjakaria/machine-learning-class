@@ -366,19 +366,6 @@ input:focus {
     font-size: 13px;
 }
 
-@media(max-width:900px) {
-    .footer-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .footer-about,
-    .footer-links,
-    .footer-contact {
-        min-width: 100%;
-    }
-}
-
 
 @media(max-width:1024px) {
     #player iframe {
@@ -389,14 +376,15 @@ input:focus {
 @media(max-width:900px) {
     .main-layout {
         flex-direction: column;
+        gap: 20px;
     }
-
+    .player-section {
+        position: static;
+        top: auto;
+        width: 100%;
+    }
     #player iframe {
         height: 260px;
-    }
-
-    .playlist-section {
-        max-height: 350px;
     }
 
     .video-item img {
@@ -413,5 +401,16 @@ input:focus {
         display: flex;
         gap: 8px;
         justify-content: center;
+    }
+
+        .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        min-width: 100%;
     }
 }
